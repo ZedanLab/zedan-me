@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "airbnb"
+    // "prettier"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "object-curly-newline": "off",
+    "comma-dangle": "off",
+    "function-paren-newline": "off",
+    "no-irregular-whitespace": "off",
+    "no-confusing-arrow": "off",
+    "implicit-arrow-linebreak": "off"
+  }
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,200;0,300;0,600;0,700;0,900;1,100;1,200;1,500;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,200;0,300;0,600;0,700;0,900;1,100;1,200;1,500;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,200;0,300;0,600;0,700;0,900;1,100;1,200;1,500;1,600;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+  @apply selection:bg-blue-200 selection:text-accent;
+}
+
+body {
+  background: url(../public/assets/images/background.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  height: 8px;
+  width: 8px;
+  @apply bg-gray-100 opacity-0;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar:hover {
+  @apply bg-gray-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:active {
+  @apply bg-blue-600;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+
+.testimonial-body {
+  display: -webkit-box;
+  line-break: anywhere;
+  -webkit-line-break: anywhere;
+  -webkit-box-orient: vertical;
+}
+
+@layer utilities {
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+
+  .bg-gradient-custom {
+    @apply bg-gradient-to-r from-accent via-blue-600 to-blue-800;
+  }
+
+  .bg-gradient-custom-animate {
+    @apply bg-gradient-custom animate-moving;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r bg-gradient-custom;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @variants hover {
+    .animate-moving {
+      background-size: 400% 400%;
+      animation: gradient-animate 5s ease infinite;
+    }
+  }
+}
+
+@keyframes gradient-animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

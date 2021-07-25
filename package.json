@@ -1,0 +1,38 @@
+{
+  "name": "zedan-me",
+  "version": "0.1.0",
+  "description": "My personal portfolio website built using Next.js",
+  "homepage": "https://zedan.me",
+  "keywords": ["Software", "Engineer", "Development", "Programming", "Egypt", "Backend", "Frontend", "FullStack", "Freelancer", "Remotely", "Laravel", "React.js", "Next.js", "Application"],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "export": "npm run build && next export",
+    "lint": "next lint",
+    "format": "prettier --write \"{,!(.next)/**/}*.{js, jsx}\""
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
+    "axios": "^0.21.1",
+    "formik": "^2.2.9",
+    "framer-motion": "^4.1.17",
+    "next": "latest",
+    "next-sitemap": "^1.6.140",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "^11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "postcss": "^8.3.6",
+    "prettier": "^2.3.2",
+    "tailwindcss": "^2.2.6"
+  }
+}
