@@ -18,7 +18,7 @@ function Container({ props, classes = '', children, route }) {
     >
       <Navbar />
       <main className="flex flex-col lg:flex-row drop-shadow-2xl lg:rounded-l-3xl overflow-hidden">
-        <div className="bg-gray-100 p-4 lg:p-10 text-center flex flex-col">
+        <div className="bg-gray-100 p-4 lg:p-10 text-center flex flex-col lg:max-h-[80vh] overflow-y-auto">
           <div className="flex lg:flex-col justify-center items-center gap-x-5 p-2">
             <div className="h-24 w-24 lg:h-52 lg:w-52 rounded-full shadow-md overflow-hidden bg-gradient-custom hover:animate-moving p-1">
               <div className="rounded-full border-2 border-gray-50">
@@ -68,7 +68,7 @@ function Container({ props, classes = '', children, route }) {
         <AnimatePresence exitBeforeEnter>
           <div
             key={route}
-            className="text-gray-500 font-serif bg-white w-screen overflow-x-hidden overflow-y-visible lg:overflow-y-scroll h-full lg:h-[700px] p-4 md:p-10 pt-0 prose lg:max-w-[75ch] xl:max-w-[85ch] scroll-smooth"
+            className="text-gray-500 font-serif bg-white w-screen overflow-x-hidden overflow-y-visible lg:overflow-y-scroll h-full lg:h-[700px] p-6 md:p-10 prose lg:max-w-[75ch] xl:max-w-[85ch] scroll-smooth lg:max-h-[80vh]"
           >
             {children}
           </div>

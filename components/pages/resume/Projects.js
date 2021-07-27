@@ -11,7 +11,7 @@ export default function Projects({
     {
       name: 'Na7la Egypt',
       brief: 'An online grocery and delivery service for individuals and businesses.',
-      link: 'https://kalendarday.com/',
+      link: 'https://na7laegypt.com/',
     },
     {
       name: 'KalendarDay',
