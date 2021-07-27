@@ -12,7 +12,8 @@ export default function ProjectCard({ className = '', project }) {
       exit={{ scale: 0.9 }}
       className={`mx-2 h-46 w-72 p-5 shadow-lg bg-blue-600 hover:bg-gradient-custom hover:animate-moving !no-underline ${className}`}
       href={project.link}
-      target="__blank"
+      target="_blank"
+      rel="noreferrer"
     >
       <p className="!text-white font-semibold !text-2xl !mt-8 !mb-4">{project.name}</p>
       <p className="!text-white">{project.brief}</p>
